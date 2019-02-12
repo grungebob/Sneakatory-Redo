@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.png';
 import './App.css';
+import data from './dummy_data';
+
+/* Quick test of a react function to make sure the data is importing properly */
+const ListTest = data.shelf1.map((row) =>
+<li>{row.row}</li>
+);
 
 class App extends Component {
   render() {
@@ -20,6 +26,14 @@ class App extends Component {
             Learn React
           </a> */}
         </header>
+
+      <body className="App-body">
+          {/* Passing to the first component */}
+          {/* Use of the above test function <ul>TEST: {ListTest}</ul>     */}
+      </body>
+
+      
+
       </div>
     );
   }
