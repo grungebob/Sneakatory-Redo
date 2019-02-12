@@ -10,9 +10,14 @@
   position: absolute;
 }
 
+@font-face{
+  font-family: BebasTitles;
+  src: url("BebasNeue-Regular.woff")
+}
+
 .App-header {
   background-color: #282c34;
-  min-height: 30vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,15 +26,26 @@
   color: white;
 }
 
+.App-header div {
+  font-size: 2vh;
+}
+
 .App-body {
-  background-color: #282c34;
+  color: #282c34;
+  background-color: #ffffff;
+  font-family: BebasTitles;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: -1;
+}
+
+
+.App-body img {
+  max-height: 10vh;
 }
 
 .title {

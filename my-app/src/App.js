@@ -20,6 +20,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p className="title">
             <code >The Return of Sneakatory</code>
+            <div> by Robert Chung </div>
+            <div> chungrob@gmail.com</div>
+
           </p>
           {/* <a
             className="App-link"
