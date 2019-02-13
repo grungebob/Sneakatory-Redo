@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Shoe(props){
+function Row(props){
 
     const eachShoe = props.shelfRow.shoes.map((shoe)=>  
          <img src = {shoe.imgLink} alt = "kick" className="shoe" />
@@ -15,4 +15,4 @@ function Shoe(props){
     )
 }
 
-export default Shoe;
+export default Row;
