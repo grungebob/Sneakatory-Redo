@@ -34,13 +34,13 @@ class App extends Component {
           </a> */}
         </header>
 
-      <body className="App-body">
+      <div className="App-body">
           {/* Use of the above test function <ul>TEST: {ListTest}</ul>     */}
           
           {/* Passing to the first component */}
           <Shelf shelf1 = {Shelf1} />
 
-      </body>
+      </div>
       </div>
     );
   }
