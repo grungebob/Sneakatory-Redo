@@ -22,6 +22,9 @@ class App extends Component {
             <code >The Return of Sneakatory</code>
             <div> by Robert Chung </div>
             <div> chungrob@gmail.com</div>
+            <div><a href="https://stockx-inventory.herokuapp.com">Original Version</a></div>
+            <div><a href="https://github.com/grungebob/sneakatory-redo">Github</a></div>
+
 
           </p>
           {/* <a

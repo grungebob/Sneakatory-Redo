@@ -1,13 +1,14 @@
 import React from 'react';
+import Shoe from './Shoe.js';
 
 function Row(props){
 
     const eachShoe = props.shelfRow.shoes.map((shoe)=>  
-         <img src = {shoe.imgLink} alt = "kick" className="shoe" />
+        <Shoe shoe = {shoe} />
+        //  <img src = {shoe.imgLink} alt = "kick" className="shoe" />
     );
 
     return ( 
-
         <div> 
             {eachShoe}
         </div>
