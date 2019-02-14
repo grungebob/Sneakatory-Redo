@@ -12,17 +12,17 @@ class Shoe extends Component {
         UPC: this.props.shoe.UPC,  
         img: this.props.shoe.imgLink, 
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.seeInfo = this.seeInfo.bind(this);
   } 
 
-  handleClick() {
+  seeInfo() {
     alert('ID: ' + this.shoe.id + '\nBrand: ' + this.shoe.brand
             + '\nStyle: ' + this.shoe.style + '\nUPC: ' + this.shoe.UPC);
   };
 
   render() {
     return (
-        <img src = {this.shoe.img} alt = "Kick" class = "table-row element" onClick={this.handleClick}/>
+        <img src = {this.shoe.img} alt = "Kick" class = "table-row element" onClick={this.seeInfo}/>
 
     );
   }
