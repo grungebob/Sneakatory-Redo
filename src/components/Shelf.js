@@ -4,14 +4,14 @@ import Row from './Row.js'
 function Shelf(props){
 
     const allRows = props.shelf1.map((shelfRow)=> 
-        <div class="table-row"> <Row shelfRow = {shelfRow}/> </div>
+        <Row shelfRow = {shelfRow}/>
         //Tester code for which row: {shelfRow.row} 
     );
 
     return ( 
-
+        //This is the entirety of the Shelf:
         <div> 
-        {allRows}
+            {allRows}
         </div>
         
     )

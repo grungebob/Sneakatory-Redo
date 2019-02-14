@@ -1,14 +1,15 @@
 import React from 'react';
+import Shoe from './Shoe.js'
 
 function Row(props){
 
-    const eachShoe = props.shelfRow.shoes.map((shoe)=>  
-         <img src = {shoe.imgLink} alt = "kick" className="shoe" />
+    const eachShoe = props.shelfRow.shoes.map((shoe)=> 
+            <Shoe shoe={shoe} />
     );
 
     return ( 
-
-        <div> 
+        //This is a singular row:
+        <div class="table-row"> 
             {eachShoe}
         </div>
         
